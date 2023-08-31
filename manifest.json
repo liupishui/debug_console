@@ -1,0 +1,23 @@
+{
+   "content_scripts": [
+      {
+          "run_at": "document_end",
+          "matches": ["*://*/*"],
+          "js": ["javascripts/eruda_run.js","javascripts/vconsole.js","javascripts/jquery.min.js"]
+      }
+  ],
+   "icons": {
+      "128": "rt.png",
+      "16": "rt.png",
+      "48": "rt.png"
+   },
+   "browser_action": {
+        "default_icon": "rt.png",
+        "default_title": "V&E"
+    },
+   "manifest_version": 2,
+   "name": "V&E",
+   "description": "VConsole和eruda移动端页面调试工具",
+   "permissions": [ "background","contextMenus","tabs" ],
+   "version": "1.1.1"
+}
